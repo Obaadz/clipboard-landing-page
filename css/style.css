@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+/* Start Variables */
+:root {
+    --primaryColor: hsl(171, 66%, 44%) ;
+    --secondaryColor: hsl(233, 100%, 69%);
+    --h2Color: hsl(210, 10%, 33%);
+    --paraColor: hsl(201, 11%, 66%);
+}
+/* End Variables */
+
+
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px 40px
+}
+
+.center {
+    text-align: center;
+}
+
+h2,
+h1 {
+    color: var(--h2Color);
+}
+p {
+    color: var(--paraColor);
+    line-height: 1.4;
+}
+
+.btn-cyan {
+    background-color: var(--primaryColor);
+    box-shadow: #1e9f87 0px 2px 2px,#1e9f87 0px -1px 2px
+}
+.btn-blue {
+    background-color: var(--secondaryColor);
+    box-shadow: #5462D2 0px 2px 2px,#5462D2 0px -1px 2px
+}
+.btn {
+    display: inline-block;
+    position: relative;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.btn + .btn {
+    margin-left: 10px;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    right: 50%;
+    bottom:8px;
+    background-color: white;
+    transition: .5s
+}
+.btn:hover,
+.btn:hover::before {
+    opacity: .75;
+}
+.btn:hover::before {
+    display: inline-block;
+    padding: 0 40px;
+    right: calc(50% - 40px);
+}
+/* End Global Rules */
+
+/* Start Header */
+header {
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+
+header img {
+    margin-top: 30px;
+    width: 100px;
+}
+
+header p {
+    max-width: 57ch;
+    margin: 0 auto 30px;
+}
+/* End Header */
+
+/* Start Tracker */
+.tracker h2 {
+    font-size: 22px
+}
+.tracker p {
+    max-width: 54ch;
+    margin: 0 auto 30px;
+}
+/* End Tracker */
