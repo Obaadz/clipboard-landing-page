@@ -29,13 +29,14 @@ body {
     text-align: center;
 }
 
+h3,
 h2,
 h1 {
     color: var(--h2Color);
 }
 p {
     color: var(--paraColor);
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .btn-cyan {
@@ -104,3 +105,37 @@ header p {
     margin: 0 auto 30px;
 }
 /* End Tracker */
+
+/* Start Apple */
+.apple {
+    margin: 20px 0 100px;
+}
+
+.apple > div:first-child {
+    position: relative;
+    margin-right: 20px;
+
+}
+.apple img {
+    position: absolute;
+    width: 50%;
+    left: -40px;
+    padding: 20px;
+}
+
+.apple .content {
+    width:50%;
+    margin-left: 50%;
+    padding-top: 40px;
+}
+
+.apple .content h2 {
+    margin: 0;
+}
+
+.apple .content p {
+    margin-top: 10px;
+    max-width: 34ch;
+    font-size: 18px;
+}
+/* End Apple */
