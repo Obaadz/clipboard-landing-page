@@ -19,6 +19,9 @@ body {
     margin: 0;
 }
 
+.vh100 {
+    height: 100vh;
+}
 .container {
     max-width: 750px;
     margin: 0 auto;
@@ -96,37 +99,39 @@ header p {
 }
 /* End Header */
 
-/* Start Tracker */
-.tracker h2 {
+/* Start Styling Sections */
+.sect h2 {
     font-size: 22px
 }
-.tracker p {
+.sect p {
     max-width: 54ch;
     margin: 0 auto 30px;
 }
-/* End Tracker */
+/* End Sections */
 
 /* Start Apple */
 .apple {
-    margin: 20px 0 100px;
+    display: flex;
+    margin: 20px 0 50px;
 }
 
-.apple > div:first-child {
-    position: relative;
-    margin-right: 20px;
 
-}
+
 .apple img {
-    position: absolute;
     width: 50%;
-    left: -40px;
-    padding: 20px;
+    margin: 0 70px 0 -70px;
 }
-
+@media (max-width: 900px) {
+    .apple {
+        flex-direction: column;
+        align-items: center;
+    }
+    .apple img {
+        margin: 0;
+    }
+}
 .apple .content {
-    width:50%;
-    margin-left: 50%;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 .apple .content h2 {
@@ -139,3 +144,45 @@ header p {
     font-size: 18px;
 }
 /* End Apple */
+
+/* Start Devices */
+.devices img {
+    max-width: 80%;
+}
+
+
+/* End Devices */
+
+/* Start Features */
+.features {
+    margin-top: -30px;
+}
+.features .content {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.features .content div + div {
+    margin-left: 50px;
+}
+@media (max-width: 772px ) {
+    .features .content {
+        flex-wrap: wrap;
+    }
+
+    .features .content div + div {
+        margin: 10px 0 ;
+    }
+}
+
+.features .content img {
+    height: 40px
+}
+.features .content h3 {
+    margin: 10px;
+}
+.features .content p {
+    max-width: 34ch;
+    margin: 0;
+}
+/* End Features */
