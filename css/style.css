@@ -31,6 +31,10 @@ body {
 .center {
     text-align: center;
 }
+a {
+    text-decoration: none;
+    color: #57585c
+}
 
 h3,
 h2,
@@ -210,7 +214,59 @@ header p {
 /* End Companies */
 
 /* Start Download */
-.download p {
-
+.download {
+    margin-bottom: 50px;
 }
 /* End Download */
+
+/* Start Footer */
+footer {
+    background-color: #eee;
+}
+
+footer .container {
+    min-width: 90%;
+    display: flex;
+    gap: 40px;
+}
+
+footer .logo {
+    height: 70px;
+    padding-bottom: 20px;
+}
+
+footer .content {
+    max-width: 330px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.3fr 0.75fr;
+    gap: 0 20px;
+}
+@media (max-width: 550px) {
+    footer .content {
+        grid-template-columns: .8fr 1.3fr;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer .logo {
+        align-self: center
+    }
+}
+
+footer .content li {
+    list-style: none;
+}
+footer .content a:hover {
+    opacity: .75
+}
+footer .social {
+    flex-grow: 1;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.social img {
+    cursor: pointer;
+}
+/* End Footer */
