@@ -124,8 +124,6 @@ header p {
     margin: 20px 0 50px;
 }
 
-
-
 .apple img {
     width: 50%;
     margin: 0 70px 0 -70px;
@@ -136,6 +134,7 @@ header p {
         align-items: center;
     }
     .apple img {
+        width: 70%;
         margin: 0;
     }
 }
