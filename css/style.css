@@ -57,10 +57,15 @@ p {
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
-    transition: all .5s;
+    transition: opacity .5s;
 }
 .btn + .btn {
     margin-left: 10px;
+}
+@media (max-width: 430px) {
+    .btn + .btn {
+        margin: 20px 0 0;
+    }
 }
 .btn::before {
     content: "";
@@ -104,7 +109,7 @@ header p {
     font-size: 22px
 }
 .sect p {
-    max-width: 54ch;
+    max-width: 57ch;
     margin: 0 auto 30px;
 }
 /* End Sections */
@@ -155,7 +160,7 @@ header p {
 
 /* Start Features */
 .features {
-    margin-top: -30px;
+    margin: -30px 0 70px;
 }
 .features .content {
     display: flex;
@@ -186,3 +191,26 @@ header p {
     margin: 0;
 }
 /* End Features */
+
+/* Start Companies */
+.companies {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+@media (max-width: 772px) {
+    .companies {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+.companies img {
+    height: 40px;
+}
+/* End Companies */
+
+/* Start Download */
+.download p {
+
+}
+/* End Download */
